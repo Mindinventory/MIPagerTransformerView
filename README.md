@@ -76,7 +76,7 @@ dependencyResolutionManagement {
 ```bash
 dependencies {
 		    ...
-	        implementation 'com.github.Mindinventory:MIPagerTransformer:x.x.x'
+	        implementation 'com.github.Mindinventory:MIPagerTransformerView:x.x.x'
 	}
 ```
 ### Implementation
