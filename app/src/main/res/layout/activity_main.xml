@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_gradient"
+    android:padding="5dp"
+    tools:context="com.mindinventory.mipagertransformersample.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clArrowRoot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/miPagerTransformerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <TextView
+            android:id="@+id/tvStyleNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tvStyleNumber"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toStartOf="@+id/ivRightArrow"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="0.3"
+            app:layout_constraintStart_toEndOf="@+id/ivLeftArrow"
+            app:layout_constraintTop_toBottomOf="@id/tvStyleName" />
+
+        <TextView
+            android:id="@+id/tvStyleName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/styleName"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/ivRightArrow"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight="0.8"
+            app:layout_constraintStart_toEndOf="@+id/ivLeftArrow"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivRightArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/next_style"
+            android:padding="5dp"
+            android:rotation="180"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ivLeftArrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arrow_back" />
+
+        <ImageView
+            android:id="@+id/ivLeftArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/previous_style"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivRightArrow"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arrow_back" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.mindinventory.mipagertransformer.MIPagerTransformerView
+        android:id="@+id/miPagerTransformerView"
+        android:layout_width="0dp"
+        android:layout_height="500dp"
+        app:dividerColor="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clArrowRoot" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

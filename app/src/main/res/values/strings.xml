@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transformStyles">
+        <item>SHUTTER</item>
+        <item>PARALLAX</item>
+        <item>FOLD N OPEN</item>
+        <item>STRINGS LEFT</item>
+        <item>CARD DRAW</item>
+        <item>CLOCK SPIN</item>
+        <item>FRAME BY FRAME</item>
+        <item>COUNTER CLOCK SPIN</item>
+        <item>OVER SPIN</item>
+        <item>STRINGS RIGHT</item>
+        <item>DUAL SHUTTER</item>
+    </string-array>
+    <string name="styleName">Style Name</string>
+    <string name="tvStyleNumber">0 / 10</string>
+    <string name="next_style">Next Style</string>
+    <string name="previous_style">Previous Style</string>
+</resources>

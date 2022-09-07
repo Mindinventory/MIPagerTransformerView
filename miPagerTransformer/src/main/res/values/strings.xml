@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MIPagerTransformer</string>
+    <string name="this_is_a_sample_description">This is a sample description</string>
+    <string name="_1_12">1/12</string>
+    <string name="placeHolderImage">PlaceHolder Image</string>
+    <string name="dividerDrawable">Divider drawable</string>
+    <string name="STYLE_0">SHUTTER</string>
+    <string name="STYLE_1">PARALLAX</string>
+    <string name="STYLE_2">FOLD N OPEN</string>
+    <string name="STYLE_3">STRINGS LEFT</string>
+    <string name="STYLE_4">CARD DRAW</string>
+    <string name="STYLE_5">CLOCK SPIN</string>
+    <string name="STYLE_6">FRAME BY FRAME</string>
+    <string name="STYLE_7">COUNTER CLOCK SPIN</string>
+    <string name="STYLE_8">OVER SPIN</string>
+    <string name="STYLE_9">STRINGS RIGHT</string>
+    <string name="STYLE_10">DUAL SHUTTER</string>
+    <declare-styleable name="MatchView">
+        <attr name="dividerColor" format="color" />
+        <attr name="showDescription" format="boolean" />
+        <attr name="showItemCount" format="boolean" />
+        <attr name="itemRadius" format="integer" />
+        <attr name="itemElevation" format="integer" />
+        <attr name="transitionStyle" format="enum">
+            <enum name="overlap" value="0" />
+            <enum name="parallax" value="1" />
+        </attr>
+
+
+    </declare-styleable>
+</resources>
