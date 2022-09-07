@@ -1,5 +1,6 @@
 <a href="https://www.mindinventory.com/?utm_source=gthb&utm_medium=repo&utm_campaign=miPagerTransformerView"><img src="https://github.com/Sammindinventory/MindInventory/blob/main/Banner.png"></a>
-# MIPagerTransformerView
+# MIPagerTransformerView  [![](https://jitpack.io/v/Mindinventory/MIPagerTransformerView.svg)](https://jitpack.io/#Mindinventory/MIPagerTransformerView) ![](https://img.shields.io/github/languages/top/Mindinventory/MIPagerTransformerView) ![](https://img.shields.io/github/license/mindinventory/MIPagerTransformerView)
+--
 MIPagerTransformer is an android library that provides a seamless image transformation experience.
 
 ## Overview
