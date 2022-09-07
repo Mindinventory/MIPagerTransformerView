@@ -86,20 +86,26 @@ dependencies {
 <com.mindinventory.mipagertransformer.MIPagerTransformerView
         android:id="@+id/miPagerTransformerView"
         android:layout_width="match_parent"
-        android:layout_height="500dp" />
+        android:layout_height="match_parent" />
 ```
 
 **Step 2: Provide drawable list to MIPagerTransformerItem ArrayList**
 ```bash
 val transformerItems: ArrayList<MIPagerTransformerItem> = ArrayList()
-image1?.let { transformerItems.add(MIPagerTransformerItem(image1, "Image 1 Trees")) }
-image2?.let { transformerItems.add(MIPagerTransformerItem(image2, "Image 2 Mountains")) }
+image1?.let { transformerItems.add(MIPagerTransformerItem(image1, "Image 1 Description")) }
+image2?.let { transformerItems.add(MIPagerTransformerItem(image2, "Image 2 Description")) }
+miPagerTransformerView.setTransformerItems(context, transformerItems)
 ```
 
 **Step 3: Customize as per your requirement**
 ```bash
+#Set divider between images
 miPagerTransformerView.setShowDivider(true, Color.CYAN)        
-// Styling of the images can be done with the Transformer option
+
+#To allow user initiated scrolling, false to block user initiated scrolling, By Default true
+miPagerTransformerView.setInputEnabled(true)
+
+#Styling of the images can be done with the Transformer option
 miPagerTransformerView.setPageTransformer(Transformer.SHUTTER)
 ```
 
